@@ -19,6 +19,7 @@ body{
     box-sizing: border-box;
     font-family: var(--poppins-font);
     font-size: 14px;
+    overflow-x: hidden;
 }
 
 .navbar{
@@ -145,12 +146,22 @@ body{
     align-items: center;
 }
 
+.albums_container{
+    display: flex;
+    justify-content: center;
+}
+
 .music_albums-card{
     width: 200px;
-    margin: 0 auto 20px;
+    margin: 0 20px 20px;
     position: relative;
     border-radius: var(--border-radius);
+}
+
+.music_albums-card:hover{
+    transform: translateY(-3px);
     box-shadow: 1px 1px 2px #e2e2fbc3, -1px -1px 2px #e2e2fbc3;
+    transition-duration:500ms;
 }
 
 .music_albums-card_img{
@@ -181,6 +192,36 @@ body{
 .genre_description p{
     margin: 0 12px 0;
     padding: 0;
+}
+
+#devices-container{
+    background: url(assets/img/bg\ devices.png) no-repeat;
+    background-size: 170px;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.devices-img{
+    width: 70%;
+    max-width: 400px;
+}
+
+.device-container-img{
+    max-width: 500px;
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+
+.devices-description{
+    margin: 0 20px 20px;
+    max-width: 500px;
 }
 
 #subscription_plans{
@@ -285,6 +326,17 @@ footer i{
     margin: 0;
 }
 
+.footer-container-logo{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer-logo{
+    width: 60%;
+    max-width:200px;
+    margin: auto;
+}
+
 @media screen and (min-width:500px) {
     .subscription_plans-card{
         min-width: 500px;
@@ -298,5 +350,99 @@ footer i{
         text-align: center;
         padding: 8px;
         margin: 20px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+
+    body{
+        font-size: 16px;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
+    .navbar_logo{
+        width: 150px;
+    }
+
+    .qualities_second-container i{
+        font-size: 70px;
+    }
+
+    .music_albums-card{
+        font-size: 16px;
+    }
+
+    #devices-container{
+        background: url(assets/img/bg\ devices.png) no-repeat;
+        background-size: contain;
+        height: 90vh;
+        align-items: center;
+    }
+
+    .devices-img{
+        width: 500px;
+    }
+    
+    
+    .device-container-img{
+        max-width: 600px;
+        background-color: #fefefe10;
+        backdrop-filter: blur(5px);
+        border-radius: 100%;
+        box-shadow: -8px -8px 8px #fefefe10, 8px 8px 8px #fefefe10;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .devices-apps img{
+        height: 60px;
+        margin: 20px;
+    }
+
+    .footer_location{
+        width: 200px;
+    }
+    
+}
+
+@media screen and (min-width:1300px) {
+
+    body{
+        font-size: 18px;
+    }
+
+    .button-pink{
+        height: 50px;
+        width: 250px;
+        font-size: 19px;
+    }
+
+    .device-container-img{
+        margin-left: 300px;
+    }
+
+    .devices-description{
+        margin: 0 40px 20px;
+    }
+
+    footer{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (min-width:1600px) {
+
+    body{
+        font-size: 20px;
+    }
+
+    .devices-description{
+        margin: 0 100px 20px;
+        max-width: 700px;
     }
 }

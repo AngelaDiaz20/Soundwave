@@ -16,12 +16,12 @@
 <body>
 
     <header>
-        <nav class="navbar">
-            <a href="index.html"><img src="assets/img/logo.png" class="navbar_logo" alt="Logo de soundwave"></a> 
+        <nav class="navbar" id="navbar">
+            <a href="index.html"><img src="assets/img/logo.png" class="navbar_logo" alt="Logo de soundwave"></a>
             <div class="navbar-items">
                 <a href="#">Iniciar Sesión</a>
                 |
-                <a href="#" class="button_download">Descargar</a> 
+                <a href="#" class="button_download">Descargar</a>
             </div>
         </nav>
     </header>
@@ -34,7 +34,9 @@
 
             <div class="banner_description">
                 <h1>Lorem ipsum</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ex rem nulla facere quae architecto ut, quaerat molestiae accusantium id necessitatibus eos! Rerum, porro hic facere quia velit repellat quaerat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ex rem nulla facere quae architecto
+                    ut, quaerat molestiae accusantium id necessitatibus eos! Rerum, porro hic facere quia velit repellat
+                    quaerat.</p>
                 <button class="button-pink">Disfruta 1 mes gratis</button>
             </div>
         </div>
@@ -69,7 +71,7 @@
             </div>
             <div class="qualities_second-container">
                 <i class='bx bx-wifi-off'></i>
-                <p>Descarga las canciones y escúchalas sin conexión a internet.</p> 
+                <p>Descarga las canciones y escúchalas sin conexión a internet.</p>
             </div>
         </div>
 
@@ -77,17 +79,84 @@
 
     <section id="music_albums">
         <h1>Algo para todos los gustos</h1>
-        <div class="music_albums-card">
-            <img src="assets/img/pop.png" class="music_albums-card_img" alt="">
-            <div class="card-musical_genre">
-                <i class="fa-solid fa-play"></i>
-                <div class="genre_description">
-                    <p>Pop music</p>
-                    <p><span>Pop music</span></p>
+
+        <div class="albums_container">
+
+            <div class="music_albums-card">
+                <img src="assets/img/reggae.png" class="music_albums-card_img" alt="">
+                <div class="card-musical_genre">
+                    <i class="fa-solid fa-play"></i>
+                    <div class="genre_description">
+                        <p>Música Reggae</p>
+                        <p><span>Música Reggae</span></p>
+                    </div>
                 </div>
             </div>
+
+            <div class="music_albums-card">
+                <img src="assets/img/rock.png" class="music_albums-card_img" alt="">
+                <div class="card-musical_genre">
+                    <i class="fa-solid fa-play"></i>
+                    <div class="genre_description">
+                        <p>Música Rock</p>
+                        <p><span>Música Rock</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music_albums-card">
+                <img src="assets/img/pop.png" class="music_albums-card_img" alt="">
+                <div class="card-musical_genre">
+                    <i class="fa-solid fa-play"></i>
+                    <div class="genre_description">
+                        <p>Música Pop</p>
+                        <p><span>Música Pop</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music_albums-card">
+                <img src="assets/img/reggaeton.png" class="music_albums-card_img" alt="">
+                <div class="card-musical_genre">
+                    <i class="fa-solid fa-play"></i>
+                    <div class="genre_description">
+                        <p>Música Regton</p>
+                        <p><span>Música Regton</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music_albums-card">
+                <img src="assets/img/classic.png" class="music_albums-card_img" alt="">
+                <div class="card-musical_genre">
+                    <i class="fa-solid fa-play"></i>
+                    <div class="genre_description">
+                        <p>Música Classic</p>
+                        <p><span>Música Classic</span></p>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
         <button class="button-pink">Ver más albumes</button>
+    </section>
+
+    <section id="devices-container">
+        <div class="device-container-img">
+            <img src="assets/img/devices (1).png" class="devices-img" alt="Compatibilidad de dispositivos">
+        </div>
+
+        <div class="devices-description">
+            <h1>Descárgala y disfruta de la mejor experiencia</h1>
+            <p>Que nada te impida vivir increíbles momentos
+                Úsala desde donde quieras ¡Compatible con todos los dispositvos!</p>
+
+            <div class="footer_apps-stores devices-apps">
+                <img src="assets/img/app_store.png" class="footer-app_store" alt="Aple store">
+                <img src="assets/img/google_play.png" class="footer-app_store" alt="Google play">
+            </div>
+        </div>
     </section>
 
     <section id="subscription_plans">
@@ -124,7 +193,7 @@
         </div>
 
     </section>
-    
+
     <footer>
 
         <div class="footer_apps-stores">
@@ -136,17 +205,21 @@
             <div class="footer-description">
                 <ul>
                     <li>Soundwave</li>
-                    <span><li>planes</li>
-                    <li>Ventajas</li>
-                    <li>Ayuda</li></span>
+                    <span>
+                        <li>planes</li>
+                        <li>Ventajas</li>
+                        <li>Ayuda</li>
+                    </span>
                 </ul>
             </div>
             <div class="footer-description">
                 <ul>
                     <li>Legal</li>
-                    <span><li>Información legal</li>
-                    <li>Políticas de privacidad</li>
-                    <li>Cookies</li></span>
+                    <span>
+                        <li>Información legal</li>
+                        <li>Políticas de privacidad</li>
+                        <li>Cookies</li>
+                    </span>
                 </ul>
             </div>
         </div>
@@ -168,12 +241,22 @@
             </div>
         </div>
 
+        <div class="footer-container-logo">
+            <a href="#navbar"><img src="assets/img/logo.png" class="footer-logo" alt="Logo de soundwave"></a>
+        </div>
+
     </footer>
 
     <script src="assets/js/bootstrap.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
 
 </body>
 
