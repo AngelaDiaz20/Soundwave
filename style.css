@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+:root{
+	--deep-pink:#EC1663;
+	--midnight-blue:#010130;
+	--yellow:#FFD652;
+	--lavender:#E2E2FB;
+	--black:#070707;
+	--white:#F3F3F3;
+    --gray:#585858;
+
+    --poppins-font:'Poppins', sans-serif;
+    --border-radius:10px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--poppins-font);
+    font-size: 14px;
+}
+
+.navbar{
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    color: white;
+}
+
+.navbar_logo{
+    width: 120px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.button_download{
+    background-color: var(--deep-pink);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#banner{
+    background:url(assets/img/background.png);
+    background-size: cover;
+    height: 78vh;
+    text-align: justify;
+    color: var(--white);
+}
+
+.banner-img{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.layer_degraded{
+    background: linear-gradient(rgba(0, 0, 0, 0.586), rgba(0, 0, 0, 0.236));
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-pink{
+    background-color: var(--deep-pink);
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    color: var(--white);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.qualities_first-container{
+    background-color: var(--lavender);
+    width: 90%;
+    margin: 20px auto;
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding-top: 15px;
+}
+
+.qualities_img{
+    width: 70%;
+    margin-bottom: -5px;
+}
+
+.qualities_second{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.qualities_second-container{
+    background-color: var(--lavender);
+    min-width: 150px;
+    width: 40%;
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.qualities_second-container i{
+    font-size: 50px;
+}
+
+#music_albums{
+    background: url(assets/img/bg_wave.png) var(--midnight-blue) center;
+    background-size: cover;
+    padding-bottom: 20px;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.music_albums-card{
+    width: 200px;
+    margin: 0 auto 20px;
+    position: relative;
+}
+
+.music_albums-card_img{
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+.card-musical_genre{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    background-color: var(--black);
+}
+
+.card-musical_genre i{
+    font-size: 18px;
+    background-color: var(--deep-pink);
+    padding: 10px 12px;
+    border-radius: 100%;
+}
+
+#subscription_plans{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscription_plans-card{
+    background-color: var(--lavender);
+    text-align: center;
+    width: 90%;
+
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+}
+
+.list_items{
+    list-style:none;
+    margin-left: -20px;
+}
+
+.list_items i{
+    margin-right: 5px;
+}
+
+footer{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 15px;
+}
+
+.footer_apps-stores{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.footer-app_store{
+    height: 40px;
+    cursor: pointer;
+}
+
+.footer_information{
+    display: flex;
+    border-bottom: 1px solid var(--white);
+}
+
+.footer_information li{
+    list-style: none;
+}
+
+footer span{
+    color: var(--gray);
+}
+
+.footer_contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer i{
+    font-size: 16px;
+    margin: 10px 8px;
+}
+
+.footer_location{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+}
+
+.footer_location p{
+    margin: 0;
+}
