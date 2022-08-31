@@ -48,25 +48,33 @@ body{
 #banner{
     background:url(assets/img/background.png);
     background-size: cover;
-    height: 78vh;
     text-align: justify;
     color: var(--white);
 }
 
 .banner-img{
     width: 80%;
+    max-width: 500px;
     margin: auto;
-    display: flex;
-    justify-content: center;
 }
 
 .layer_degraded{
     background: linear-gradient(rgba(0, 0, 0, 0.586), rgba(0, 0, 0, 0.236));
     padding: 20px;
+    height: 100%;
+    text-align: center;
+
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+}
+
+.banner_description{
+    max-width: 700px;
+    margin: auto;
+}
+
+.layer_degraded p{
+    text-align: justify;
 }
 
 .button-pink{
@@ -80,13 +88,24 @@ body{
     cursor: pointer;
 }
 
+#qualities, #subscription_plans{
+    padding: 0 5px;
+}
+
+.qualities_first{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .qualities_first-container{
     background-color: var(--lavender);
     width: 90%;
-    margin: 20px auto;
+    max-width: 500px;
+    margin: 20px;
     border-radius: var(--border-radius);
     text-align: center;
-    padding-top: 15px;
+    padding: 15px 15px 0;
 }
 
 .qualities_img{
@@ -97,19 +116,18 @@ body{
 .qualities_second{
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    justify-content: center;
     margin: auto;
-    justify-content: space-between;
 }
 
 .qualities_second-container{
     background-color: var(--lavender);
-    min-width: 150px;
     width: 40%;
+    max-width: 190px;
     border-radius: var(--border-radius);
     text-align: center;
     padding: 8px;
-    margin-bottom: 20px;
+    margin: 20px 5px;
 }
 
 .qualities_second-container i{
@@ -131,6 +149,8 @@ body{
     width: 200px;
     margin: 0 auto 20px;
     position: relative;
+    border-radius: var(--border-radius);
+    box-shadow: 1px 1px 2px #e2e2fbc3, -1px -1px 2px #e2e2fbc3;
 }
 
 .music_albums-card_img{
@@ -144,15 +164,23 @@ body{
     bottom: 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-radius: 0 0 10px 10px;
     background-color: var(--black);
+    padding: 10px 0;
 }
 
 .card-musical_genre i{
     font-size: 18px;
     background-color: var(--deep-pink);
     padding: 10px 12px;
+    margin-left: 12px;
     border-radius: 100%;
+}
+
+.genre_description p{
+    margin: 0 12px 0;
+    padding: 0;
 }
 
 #subscription_plans{
@@ -161,18 +189,43 @@ body{
     align-items: center;
 }
 
+.subscription_plans-cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .subscription_plans-card{
     background-color: var(--lavender);
     text-align: center;
-    width: 90%;
-
+    max-width: 500px;
     border-radius: var(--border-radius);
-    margin-bottom: 20px;
+    margin:20px;
+}
+
+.subscription_plans-card div{
+    width: 95%;
+    margin: auto;
+}
+
+.plan_title{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.subscription_plans-card p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.plan_description{
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--black);
 }
 
 .list_items{
     list-style:none;
-    margin-left: -20px;
+    margin-left: -40px;
 }
 
 .list_items i{
@@ -206,7 +259,7 @@ footer{
     list-style: none;
 }
 
-footer span{
+footer span, #music_albums span{
     color: var(--gray);
 }
 
@@ -230,4 +283,20 @@ footer i{
 
 .footer_location p{
     margin: 0;
+}
+
+@media screen and (min-width:500px) {
+    .subscription_plans-card{
+        min-width: 500px;
+    }
+
+    .qualities_second-container{
+        background-color: var(--lavender);
+        width: 36%;
+        max-width: 228px;
+        border-radius: var(--border-radius);
+        text-align: center;
+        padding: 8px;
+        margin: 20px;
+    }
 }
