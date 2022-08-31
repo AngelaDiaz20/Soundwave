@@ -89,6 +89,14 @@ body{
     cursor: pointer;
 }
 
+.button-pink:hover{
+    background-color: #b40a81;
+    transition-duration: 500ms;
+    box-shadow: 1px 1px 2px var(--white);
+    transform: translateY(-1px);
+    width: 220px;
+}
+
 #qualities, #subscription_plans{
     padding: 0 5px;
 }
@@ -367,6 +375,10 @@ footer i{
 
     .navbar_logo{
         width: 150px;
+    }
+
+    .button-pink:hover{
+        width: 280px;
     }
 
     .qualities_second-container i{
